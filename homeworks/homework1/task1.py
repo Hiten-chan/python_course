@@ -1,17 +1,17 @@
 word = input()
 number = int(input())
 
-if word == "óòşã":
+if word == "ÑƒÑ‚ÑĞ³":
     if number%10 == 1 and number != 11 and number%100 != 11:
         print (number, word)
     elif (number%10 == 2 or number%10 == 3 or number%10 == 4) and number%100 != 12 and number%100 != 13 and number%100 != 14:
-        print (number, word+"à")
+        print (number, word+"Ğ°")
     else:
-        print (number, word+"îâ")
-elif word == "ëîæêà":
+        print (number, word+"Ğ¾Ğ²")
+elif word == "Ğ»Ğ¾Ğ¶ĞºĞ°":
     if number%10 == 1 and number != 11 and number%100 != 11:
         print (number, word)
     elif (number%10 == 2 or number%10 == 3 or number%10 == 4) and number%100 != 12 and number%100 != 13 and number%100 != 14:
-        print (number, word[0:4]+"è")
+        print (number, word[0:4]+"Ğ¸")
     else:
-        print (number, word[0:3]+"åê")
+        print (number, word[0:3]+"ĞµĞº")
