@@ -8,6 +8,7 @@ if word == "утюг":
         print(number, word + "2")
     else:
         print(number, word + "ов")
+        
 elif word == "ложка":
     if number % 10 == 1 and number != 11 and number % 100 != 11:
         print(number, word)
