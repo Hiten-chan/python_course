@@ -16,5 +16,5 @@ od.sort()
 ev.sort()
 ev.reverse()
 
-for i in range (0, int(len(lst)/2)):
+for i in range(0, int(len(lst)/2)):
     print(od[i], ev[i], end=' ')
