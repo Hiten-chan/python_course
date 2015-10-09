@@ -7,6 +7,7 @@ while i <= n:
     i += 1
     lst.append(int(input()))
 
+
 def prime(k):
     d = 2
     while k % d != 0:
