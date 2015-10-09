@@ -11,7 +11,8 @@ elif word == "гармошка":
 elif word == "чайник":
     w = ["чайник", "чайника", "чайников"]
 
-def plural(number, words = []):
+
+def plural(number, words):
     if number % 10 == 1 and number != 11 and number % 100 != 11:
         print(number, words[0])
     elif number % 10 in [2, 3, 4] and number % 100 not in [12, 13, 14]:
