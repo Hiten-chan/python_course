@@ -16,6 +16,6 @@ def combinations(n, k):
     elif k == n or k == 0:
         return 1
     else:
-        return (fac(n) / (fac(k) * fac(n - k)))
+        return (fac(n) // (fac(k) * fac(n - k)))
 
-print(int(combinations(n, k)))
+print(combinations(n, k))
