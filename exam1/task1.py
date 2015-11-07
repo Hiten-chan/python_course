@@ -1,4 +1,4 @@
-def yo(filename, s):
+def character(filename, s):
     filename = str(filename)
     s = str(s)
     f1 = open("yazkora.txt", 'r')
