@@ -8,7 +8,7 @@ for i in l:
     p = i.split(" ")
     out.append([word for word in p if word.endswith('yo')])
 
-f2 = open('answer.txt', 'w' )
+f2 = open('answer.txt', 'w')
 
 for item in out:
     for j in item:
