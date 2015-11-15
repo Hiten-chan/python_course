@@ -1,8 +1,8 @@
 def character(filename, s):
     filename = str(filename)
     s = str(s)
-    f1 = open("yazkora.txt", 'r')
-    l = f1.read().replace("\n", "").split(".")
+    f1 = open(filename, 'r')
+    l = f1.read().replace("\n", " ").split(".")
     f1.close()
 
     out = []
