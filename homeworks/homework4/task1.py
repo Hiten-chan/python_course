@@ -17,4 +17,5 @@ def character(filename, s):
         for j in item:
             f2.write(j + " ")
         f2.write("\n")
+        
     f2.close()
