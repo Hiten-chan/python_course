@@ -18,7 +18,6 @@ def speech(filename, noun, adj):
             adj_count += 1
         else:
             verb_count += 1
-            
     return noun_count, adj_count, verb_count
 
 
@@ -28,10 +27,10 @@ def cool_sentence(n, a, v):
     
     if a < 8:
         for i in range(1, a+1):
-            sent_count += int((fac(a)/(fac(i)*fac(a-i)))*fac(i))
+            sent_count += int(fac(a)/fac(a-i))
     else:
         for i in range(1, 8):
-            sent_count += int((fac(a)/(fac(i)*fac(a-i)))*fac(i))
+            sent_count += int(fac(a)/fac(a-i))
     
     sent_count = sent_count*n*v
     return sent_count
