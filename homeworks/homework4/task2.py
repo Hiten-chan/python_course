@@ -21,10 +21,6 @@ def speech(filename, noun, adj):
             
     return noun_count, adj_count, verb_count
 
-            
-    
-#n, a, v = speech('dict.txt', 'ka', 'yo')
-
 
 def cool_sentence(n, a, v):
     from math import factorial as fac
@@ -40,4 +36,5 @@ def cool_sentence(n, a, v):
     sent_count = sent_count*n*v
     return sent_count
         
+#n, a, v = speech('dict.txt', 'ka', 'yo')
 #cool_sentence(n, a, v)
