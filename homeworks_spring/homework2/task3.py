@@ -14,10 +14,7 @@ for i in lst:
         dic[i[0]] = None
     elif i[0] not in dic:
         dic[i[0]] = i[1:]
-    else:
-        dic[i[0]].append(i[1:])
                         
-
 def cheack(a, b):
     if a == b:
         return 'Yes'
@@ -31,7 +28,6 @@ def cheack(a, b):
                 return 'Yes'
     return cheack(q, b)
             
-
 m = int(input())
 lst2 = []
 for i in range(m):
@@ -45,12 +41,8 @@ for i in lst2:
     else:
         met[i[1]].append(i[0])
 
-p = []
-need = []
-boss = None
 method = input()
 mt = method.split(' ')
-
 
 def find_met(a, b):
     if [a, b] in lst2:
@@ -60,6 +52,5 @@ def find_met(a, b):
             if find_met(i, b) != None:
                 return find_met(i, b)
         return
-    
-    
+     
 print(find_met(mt[0], mt[1])) 
