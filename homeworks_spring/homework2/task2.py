@@ -13,10 +13,7 @@ for i in lst:
     if len(i) == 1 and i[0] not in dic:
         dic[i[0]] = None
     elif i[0] not in dic:
-        dic[i[0]] = i[1:]
-    else:
-        dic[i[0]] = i[1:]
-                        
+        dic[i[0]] = i[1:]                        
 
 def cheack(a, b):
     if a == b:
@@ -29,8 +26,7 @@ def cheack(a, b):
         for q in dic[a]:
             if cheack(q, b) == 'Yes':
                 return 'Yes'
-    return cheack(q, b)
-            
+    return cheack(q, b)           
 
 c = int(input())
 for i in range(c):
