@@ -32,11 +32,9 @@ def cheack(a, b):
     return cheack(q, b)
             
 
-c = int(input())
-h = c
+a = int(input())
 t = []
-ans = []
-for i in range(c):
+for i in range(a):
     t.append(input())
  
 c = []
