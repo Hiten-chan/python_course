@@ -15,7 +15,7 @@ for i in lst:
     elif i[0] not in dic:
         dic[i[0]] = i[1:]
     else:
-        dic[i[0]].append(i[1:])
+        dic[i[0]] = i[1:]
                         
 
 def cheack(a, b):
