@@ -34,7 +34,6 @@ new_path = 'D:/Users/Leo/Jupyter/sad/' + file_name
 # else:
 #     subprocess.call('mkdir sad', shell=True)
 #     dir_for_save = os.path.abspath('sad')
-#     print(dir_for_save)
 
 if command == 'store':
     if os.path.isdir(path):
