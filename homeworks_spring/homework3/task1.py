@@ -1,4 +1,3 @@
-#!D:\Program Files\Python 3.4\python.exe
 import argparse
 import os.path
 import shutil
