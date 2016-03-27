@@ -23,6 +23,19 @@ dir_for_save = 'D:/Users/Leo/Jupyter/sad'
 file_name = path.split('/')[-1]
 new_path = 'D:/Users/Leo/Jupyter/sad/' + file_name
 
+# For Windows:
+# home_dir = os.path.abspath('sad.py').split('\\')
+# home_dir.remove('sad.py')
+# home_dir.append('sad/')
+# home_dir = '/'.join(home_dir)
+#
+# if os.path.isdir(home_dir):
+#     dir_for_save = os.path.abspath('sad')
+# else:
+#     subprocess.call('mkdir sad', shell=True)
+#     dir_for_save = os.path.abspath('sad')
+#     print(dir_for_save)
+
 if command == 'store':
     if os.path.isdir(path):
         print('Мы так не договаривались, я не знаю, что делать с папками!')
