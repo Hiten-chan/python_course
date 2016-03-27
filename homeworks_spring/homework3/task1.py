@@ -3,7 +3,6 @@ import argparse
 import os.path
 import shutil
 import subprocess
-import re
 
 parser = argparse.ArgumentParser(description='За полным описанием идеи обращаться к Косте (https://vk.com/askmebefore)',
                                  epilog="Иногда задания Кости очень странные")
@@ -15,7 +14,7 @@ parser.add_argument("command",
                          '"diff" - запуск стандартной утилиты diff')
 parser.add_argument("path",
                     type=str,
-                    help="Полный путь до файла")
+                    help="Полный путь до файла, с путями до директорий не работаем")
 
 args = parser.parse_args()
 command = args.command
