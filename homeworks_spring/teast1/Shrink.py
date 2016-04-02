@@ -24,7 +24,7 @@ percent = str(percent)+'%'
 
 
 if os.path.isfile(path):
-    if path_new == "None":
+    if path_new == None:
         subprocess.call(' '.join(["convert", path, "-resize", percent, path]), shell=True)
     else:
         if os.path.isfile(path_new):
@@ -42,7 +42,7 @@ elif os.path.isdir(path):
     for i in images2:
         images.append(i)
 
-    if path_new == 'None':
+    if path_new == None:
         for i in images:
             subprocess.call(' '.join(["convert", path, "-resize", percent, path]), shell=True)
     else:
