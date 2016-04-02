@@ -35,7 +35,7 @@ elif os.path.isdir(path):
     files = listdir(path)
     images = []
     images1 = filter(lambda x: x.endswith('.jpg'), files)
-    images2 = filter(lambda x: x.endswith('.jpg', '.png'), files)
+    images2 = filter(lambda x: x.endswith('.png'), files)
 
     for i in images1:
         images.append(i)
