@@ -22,7 +22,7 @@ path_new = args.path_new
 file_name = path.split('/')[-1]
 percent = str(percent)+'%'
 
-print(path_new)
+
 if os.path.isfile(path):
     if path_new == "None":
         subprocess.call(' '.join(["convert", path, "-resize", percent, path]), shell=True)
