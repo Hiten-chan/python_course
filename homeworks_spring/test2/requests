@@ -42,7 +42,7 @@ limit 1;
 inner join listened on song_id = songs.id
 inner join songs on album_id = albums.id 
 inner join albums on artist_id = artists.id 
-group by listened.song_id, 
+group by listened.song_id 
 order by count(*) desc 
 limit 5;
 
