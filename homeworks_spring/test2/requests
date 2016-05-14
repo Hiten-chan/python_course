@@ -54,6 +54,16 @@ group by albums.release_year
 order by r desc 
 limit 1;
 
-11) 
+11) select albums.name, artists.name, songs.name, listened.start_time from artists
+inner join albums on artist_id = artists.id
+inner join users on users.id = listened.user_id
+inner join songs on album_id = albums.id
+inner join listened on song_id = songs.id
+where users.id = 47
+order by listened.start_time desc
+limit 20;
+
+
+
 
 
