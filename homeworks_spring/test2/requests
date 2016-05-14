@@ -62,8 +62,3 @@ inner join listened on song_id = songs.id
 where users.id = 47
 order by listened.start_time desc
 limit 20;
-
-
-
-
-
