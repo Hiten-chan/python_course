@@ -12,6 +12,11 @@ limit 5;
 inner join albums on artist_id = artists.id 
 group by artists.name;
 
-5) 
+5) select artists.name, count(*) from artists 
+inner join albums on artist_id = artists.id 
+inner join songs on album_id = albums.id 
+group by artists.name;
+
+6) 
 
 
