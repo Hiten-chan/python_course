@@ -2,7 +2,7 @@
 
 2) select * from users order by registered desc limit 5;
 
-3) select username, user_id, count(*) as s from listened 
+3) select username, count(*) as s from listened 
 inner join users on users.id = user_id 
 group by user_id 
 order by s desc 
@@ -17,6 +17,13 @@ inner join albums on artist_id = artists.id
 inner join songs on album_id = albums.id 
 group by artists.name;
 
-6) 
+6) select artists.name, albums.name, count(*) from artists 
+inner join songs on album_id = albums.id 
+inner join albums on artist_id = artists.id 
+group by albums.name 
+order by count(*) desc 
+limit 1;
+
+7) 
 
 
