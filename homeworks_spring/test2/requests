@@ -42,10 +42,18 @@ limit 1;
 inner join listened on song_id = songs.id
 inner join songs on album_id = albums.id 
 inner join albums on artist_id = artists.id 
-group by listened.song_id 
+group by listened.song_id, 
 order by count(*) desc 
 limit 5;
 
-10) 
+10) select albums.release_year, count(*) as r from artists 
+inner join listened on song_id = songs.id
+inner join songs on album_id = albums.id 
+inner join albums on artist_id = artists.id 
+group by albums.release_year
+order by r desc 
+limit 1;
+
+11) 
 
 
