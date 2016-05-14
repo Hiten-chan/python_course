@@ -1,1 +1,9 @@
+1) select * from users order by username;
+
+2) select * from users order by registered desc limit 5;
+
+3) 
+
+4) 
+
 
