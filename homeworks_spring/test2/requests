@@ -31,13 +31,21 @@ group by albums.name
 order by t desc 
 limit 1;
 
-8) select artists.name, albums.name, avg(songs.duration) as t from artists 
+8) select artists.name, albums.name, avg(songs.duration) as a from artists 
 inner join Songs on album_id = albums.id 
 inner join albums on artist_id = artists.id 
 group by albums.name 
-order by t desc 
+order by a desc 
 limit 1;
 
-9) 
+9) select artists.name, albums.name, songs.name, count(*) from artists 
+inner join listened on song_id = songs.id
+inner join songs on album_id = albums.id 
+inner join albums on artist_id = artists.id 
+group by listened.song_id 
+order by count(*) desc 
+limit 5;
+
+10) 
 
 
