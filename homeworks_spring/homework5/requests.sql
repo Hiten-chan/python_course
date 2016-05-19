@@ -33,3 +33,22 @@ limit 10;
 inner join orders on orders.id = order_id 
 inner join goodsinorders on goods.id = good_id 
 where paid = 1;
+
+12) select Goods.id, Goods.name from Goods 
+inner join Users on Users.id = user_id 
+inner join Orders on order_id = Orders.id 
+inner join GoodsInOrders on Goods.id = good_id 
+where gender = "F" 
+group by Goods.name 
+order by count(*) desc 
+limit 10;
+
+13) select Users.id, Users.name from Users 
+inner join Goods on Goods.id = good_id 
+inner join GoodsInOrders on Orders.id = order_id
+inner join Orders on Users.id = user_id 
+where units = "KG" 
+group by user_id 
+order by sum(Goods.quantity) desc 
+limit 1;
+
